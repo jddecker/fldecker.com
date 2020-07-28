@@ -18,6 +18,7 @@ body {
 
 .main-header {
     grid-area: header;
+    font-size: xx-large;
 }
 
 .main-content {
@@ -31,6 +32,11 @@ body {
 .main-footer {
     grid-area: footer;
     font-size: small;
+}
+
+.nav-link {
+    text-align: right;
+    float: right;
 }
 
 .obit-img {
@@ -49,5 +55,9 @@ body {
             "header header"
             "content nav"
             "footer footer";
+    }
+
+    .nav-link {
+        display: none;
     }
 }
