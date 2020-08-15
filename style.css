@@ -53,6 +53,7 @@ h2 {
 
 .main-header {
     grid-area: header;
+    font-size: xx-large;
 }
 
 .main-content {
