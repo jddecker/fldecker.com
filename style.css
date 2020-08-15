@@ -4,19 +4,49 @@ body {
     font-size: medium;
 }
 
-img {
-    max-width: 100%;
+a:link,
+a:visited,
+a:link:active,
+a:visited:active {
+    color: blue;
 }
+
+a:link:active,
+a:visited:active {
+    background: lightblue;
+}
+
+img {
+    max-width: 95%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+/* Setting up grid display for the page */
 
 .wrapper {
     margin: auto;
     width: 90%;
+    max-width: 1200px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: auto;
     grid-template-areas:
         "header"
-        "content"
+        "main-content"
+        "footer";
+}
+
+/* For navigation page only */
+.wrapper-nav {
+    grid-template-areas:
+        "header"
         "nav"
         "footer";
 }
@@ -26,7 +56,7 @@ img {
 }
 
 .main-content {
-    grid-area: content;
+    grid-area: main-content;
 }
 
 .main-nav {
@@ -38,43 +68,46 @@ img {
     font-size: small;
 }
 
+/* For display inside the header section */
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.header-nav a:link,
+.header-nav a:visited,
+.header-nav a:link:active,
+.header-nav a:visited:active {
+    color: black;
+    text-decoration: none;
+}
+
+.header-nav span {
+    font-size: 2em;
+    vertical-align: middle;
+    display: none;
+}
+
+.header-nav img {
+    height: 3em;
+    vertical-align: middle;
+}
+
 .obit-img {
     text-align: center;
     font-size: small;
 }
 
-/* .obit-img img {
-    max-width: 95%;
-} */
-
-.header-grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
-
-.header-title {
-    font-size: xx-large;
-}
-
-.header-nav {
-    display: initial;
-}
-
-.header-nav img {
-    height: 3em;
-    vertical-align: bottom;
-}
-
-@media (min-width: 992px) {
-    .wrapper {
-        grid-template-columns: 1fr auto;
-        grid-template-areas:
-            "header header"
-            "content nav"
-            "footer footer";
-    }
-
-    .header-nav {
-        display: none;
+@media (min-width: 600px) {
+    /* show menu text when page width is big enough */
+    .header-nav span {
+        display: initial;
     }
 }
