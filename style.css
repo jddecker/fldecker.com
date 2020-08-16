@@ -43,14 +43,6 @@ h2 {
         "footer";
 }
 
-/* For navigation page only */
-.wrapper-nav {
-    grid-template-areas:
-        "header"
-        "nav"
-        "footer";
-}
-
 .main-header {
     grid-area: header;
 }
@@ -63,9 +55,24 @@ h2 {
     grid-area: nav;
 }
 
+/* Footer styles */
 .main-footer {
     grid-area: footer;
-    font-size: small;
+    font-size: .8rem;
+    text-align: right;
+}
+
+.main-footer img {
+    height: .8rem;
+    vertical-align: middle;
+}
+
+.main-footer a:link,
+.main-footer a:visited,
+.main-footer a:link:active,
+.main-footer a:visited:active {
+    color: black;
+    text-decoration: none;
 }
 
 /* For display inside the header section */
@@ -73,11 +80,10 @@ h2 {
 .header-grid {
     display: grid;
     grid-template-columns: 1fr auto;
-    align-items: center;
 }
 
 .header-title {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -90,14 +96,22 @@ h2 {
 }
 
 .header-nav span {
-    font-size: 2em;
+    font-size: 2rem;
     vertical-align: middle;
     display: none;
 }
 
 .header-nav img {
-    height: 3em;
+    height: 3rem;
     vertical-align: middle;
+}
+
+/* For navigation page only */
+.wrapper-nav {
+    grid-template-areas:
+        "header"
+        "nav"
+        "footer";
 }
 
 .obit-img {
