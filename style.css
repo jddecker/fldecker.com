@@ -1,14 +1,126 @@
 body {
+    /* Use system font */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 700px;
-    margin: auto;
-    padding: 1em;
 }
 
-.header_img {
-    text-align: center;
+a:link,
+a:visited,
+a:link:active,
+a:visited:active {
+    color: blue;
 }
 
-.header_img img {
+a:link:active,
+a:visited:active {
+    background: lightblue;
+}
+
+img {
     max-width: 95%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+/* Setting up grid display for the page */
+
+.wrapper {
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "main-content"
+        "footer";
+}
+
+.main-header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+/* Footer styles */
+.main-footer {
+    grid-area: footer;
+    font-size: .8rem;
+    text-align: right;
+}
+
+.main-footer img {
+    height: .8rem;
+    vertical-align: middle;
+}
+
+.main-footer a:link,
+.main-footer a:visited,
+.main-footer a:link:active,
+.main-footer a:visited:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* For display inside the header section */
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-nav a:link,
+.header-nav a:visited,
+.header-nav a:link:active,
+.header-nav a:visited:active {
+    color: black;
+    text-decoration: none;
+}
+
+.header-nav span {
+    font-size: 2rem;
+    vertical-align: middle;
+    display: none;
+}
+
+.header-nav img {
+    height: 3rem;
+    vertical-align: middle;
+}
+
+/* For navigation page only */
+.wrapper-nav {
+    grid-template-areas:
+        "header"
+        "nav"
+        "footer";
+}
+
+.obit-img {
+    text-align: center;
+    font-size: small;
+}
+
+@media (min-width: 600px) {
+    /* show menu text when page width is big enough */
+    .header-nav span {
+        display: initial;
+    }
 }
