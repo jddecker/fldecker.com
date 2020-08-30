@@ -28,7 +28,7 @@ h2 {
 .wrapper {
     margin: 1rem auto;
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: auto;
@@ -123,8 +123,10 @@ h2 {
     text-align: center;
     font-size: small;
 }
+
 .img_cap img {
     max-width: 95%;
+    max-height: 95vh;
 }
 
 /* Media queries */
