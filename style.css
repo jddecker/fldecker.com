@@ -1,3 +1,4 @@
+/* General styles */
 body {
     /* Use system font */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -15,10 +16,6 @@ a:visited:active {
     background: lightblue;
 }
 
-img {
-    max-width: 95%;
-}
-
 h1 {
     font-size: xx-large;
 }
@@ -27,12 +24,15 @@ h2 {
     font-size: x-large;
 }
 
-/* Setting up grid display for the page */
+li {
+    padding: .3em;
+}
 
+/* Setting up grid display for the page */
 .wrapper {
     margin: 1rem auto;
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: auto;
@@ -52,6 +52,7 @@ h2 {
 
 .main-nav {
     grid-area: nav;
+    font-size: larger;
 }
 
 /* Footer styles */
@@ -75,15 +76,24 @@ h2 {
 }
 
 /* For display inside the header section */
-
 .header-grid {
     display: grid;
     grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "header-nav"
+        "header-title";
 }
 
 .header-title {
+    grid-area: header-title;
     font-size: 2.5rem;
     font-weight: bold;
+    text-align: left;
+}
+
+.header-nav {
+    grid-area: header-nav;
+    text-align: right;
 }
 
 .header-nav a:link,
@@ -113,14 +123,29 @@ h2 {
         "footer";
 }
 
-.obit-img {
+/* Image caption */
+.img_cap {
     text-align: center;
     font-size: small;
 }
 
+.img_cap img {
+    max-width: 95%;
+    max-height: 95vh;
+}
+
+/* Media queries */
 @media (min-width: 600px) {
-    /* show menu text when page width is big enough */
+    /* Show menu text when page width is big enough */
     .header-nav span {
         display: initial;
+    }
+}
+
+@media (min-width: 400px) {
+    /* Fix header once over 400px */
+    .header-grid {
+        grid-template-areas:
+            "header-title header-nav";
     }
 }
