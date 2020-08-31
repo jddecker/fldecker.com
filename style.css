@@ -23,6 +23,10 @@ h2 {
     font-size: x-large;
 }
 
+li {
+    padding: .3em;
+}
+
 /* Setting up grid display for the page */
 
 .wrapper {
