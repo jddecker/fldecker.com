@@ -115,14 +115,6 @@ li {
     vertical-align: middle;
 }
 
-/* For navigation page only */
-.wrapper-nav {
-    grid-template-areas:
-        "header"
-        "nav"
-        "footer";
-}
-
 /* Image caption */
 .img_cap {
     text-align: center;
