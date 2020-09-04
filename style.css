@@ -58,12 +58,11 @@ li {
 /* Footer styles */
 .main-footer {
     grid-area: footer;
-    font-size: .8rem;
     text-align: right;
 }
 
 .main-footer img {
-    height: .8rem;
+    height: 3rem;
     vertical-align: middle;
 }
 
