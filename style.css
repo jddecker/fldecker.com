@@ -118,6 +118,8 @@ li {
 .img_cap {
     text-align: center;
     font-size: small;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img_cap img {
