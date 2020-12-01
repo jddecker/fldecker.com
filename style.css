@@ -52,7 +52,7 @@ li {
 
 .main-nav {
     grid-area: nav;
-    font-size: larger;
+    font-size: x-large;
 }
 
 /* Footer styles */
