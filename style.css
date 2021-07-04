@@ -5,9 +5,7 @@ body {
 }
 
 a:link,
-a:visited,
-a:link:active,
-a:visited:active {
+a:visited {
     color: blue;
 }
 
@@ -17,11 +15,11 @@ a:visited:active {
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 li {
