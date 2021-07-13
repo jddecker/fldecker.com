@@ -27,6 +27,7 @@ header, main, footer {
     width: 90%;
     max-width: 50rem;
     margin: auto;
+    display: block; /* Fix for IE11 */
 }
 
 h1 {
