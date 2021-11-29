@@ -20,28 +20,12 @@ a {
     text-decoration: underline;
 }
 
+/* Layout elements */
 header, main, footer {
     width: 90%;
     max-width: 50rem;
     margin: auto;
     display: block; /* Fix for IE11 */
-}
-
-h1, h2, h3 {
-    margin: 1rem auto;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3rem;
-    border-bottom: 1px solid black;
-}
-
-h3 {
-    font-size: 2rem;
 }
 
 .main, .footer {
@@ -60,6 +44,24 @@ h3 {
 .footer p {
     text-align: right;
     margin: auto;
+}
+
+/* Text headings */
+h1, h2, h3 {
+    margin: 1rem auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 /* Photo caption */
