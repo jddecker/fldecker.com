@@ -71,6 +71,7 @@ p, ul {
 
 /* Image grid */
 .image-grid {
+    margin-top: 1rem;
     line-height: 0px;
     column-count: auto;
     column-width: 339px; /* Width to stop 3 columns */
