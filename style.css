@@ -91,6 +91,15 @@ td {
     hyphens: auto;
 }
 
+video {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
 /* Image grid */
 .image-grid {
     margin-top: 1rem;
