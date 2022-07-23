@@ -1,5 +1,5 @@
 body {
-    /* Use system font */
+    /* system font */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-size: 1.1rem;
     color: black;
@@ -9,12 +9,12 @@ body {
     padding: 0;
 }
 
-/* Layout elements */
+/* layout */
 header, main, footer {
     width: 90%;
     max-width: 1024px;
     margin: auto;
-    display: block; /* Fix for IE11 */
+    display: block; /* fix for ie11 */
 }
 
 .main, .footer {
@@ -36,7 +36,7 @@ header, main, footer {
     margin: auto;
 }
 
-/* Text headings */
+/* headings */
 h1, h2, h3 {
     margin-top: 2rem;
     margin-bottom: 0rem;
@@ -91,16 +91,7 @@ td {
     hyphens: auto;
 }
 
-video {
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-}
-
-/* Image grid */
+/* image grid */
 .image-grid {
     margin-top: 1rem;
     line-height: 0px;
@@ -114,8 +105,8 @@ video {
     margin-bottom: 4px;
 }
 
-/* Image caption */
-.image-caption {
+/* figure */
+figure {
     text-align: center;
     font-size: 1rem;
     font-style: italic;
@@ -124,12 +115,21 @@ video {
     margin-bottom: 3rem;
 }
 
-.image-caption img {
+figure img {
     max-width: 100%;
     height: auto;
 }
 
-/* Media queries */
+figure video {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+/* media queries */
 @media screen and (max-width: 425px) {
     .image-grid {
         column-count: 1;
