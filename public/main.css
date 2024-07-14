@@ -1,0 +1,115 @@
+:root {
+    --page-width: 1024px;
+    --font-size: 16px;
+    --color-base: black;
+    --color-bg: snow;
+    --color-link: blue;
+    --color-footer-bg: darkblue;
+    --color-footer: var(--color-bg);
+    --color-table-head: darkgray;
+    --color-table-row1: snow;
+    --color-table-row2: lightgray;
+    --padding: 0.25rem 1rem;
+}
+html {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: var(--color-base);
+    background-color: var(--color-bg);
+}
+header, section {
+    max-width: var(--page-width);
+    padding: var(--padding);
+    margin: auto;
+}
+footer {
+    margin-top: auto;
+    padding: var(--padding);
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer);
+    text-align: center;
+    font-size: 0.9rem;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1, h2, h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-variant: small-caps;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 1px solid black;
+}
+h3 {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+a {
+    color: var(--color-link);
+    text-decoration: underline;
+    cursor: pointer;
+}
+p, ul {
+    line-height: 1.5;
+}
+table {
+    margin: auto;
+    max-width: 100%;
+    border-spacing: 0;
+    font-size: 0.85rem;
+}
+thead > tr {
+    background: var(--color-table-head);
+}
+th {
+    padding: 0.5rem 0.1rem;
+    hyphens: auto;
+}
+tbody > tr:nth-child(odd) {
+    background: var(--color-table-row1);
+}
+tbody > tr:nth-child(even) {
+    background: var(--color-table-row2);
+}
+tbody > tr:hover {
+    background: var(--color-footer-bg);
+    color: var(--color-footer);
+}
+td {
+    padding: 0.5rem 0.1rem;
+    hyphens: auto;
+}
+.image-grid {
+    margin-top: 1rem;
+    text-align: center;
+}
+.image-grid > a {
+    text-decoration: none;
+}
+.image-grid > img {
+    width: auto;
+    height: 125px;
+}
+.img {
+    max-width: 75%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
