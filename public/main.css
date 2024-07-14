@@ -94,6 +94,7 @@ tbody > tr:hover {
 td {
     padding: 0.5rem 0.1rem;
     hyphens: auto;
+    text-align: center;
 }
 .image-grid {
     margin-top: 1rem;
