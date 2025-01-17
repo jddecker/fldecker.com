@@ -1,0 +1,4 @@
+user-agent: *
+Allow: /
+
+Sitemap: https://fldecker.com/sitemap.txt
